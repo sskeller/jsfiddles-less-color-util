@@ -3,11 +3,12 @@ var s5e = window.s5e || {};
 (function ($, _, Modernizr, less, debug) {
   "use strict";
 
+  debug.time("Start Up");
+
   _.extend(s5e, {
   });
 
   $(function() {
-    debug.time("Start Up");
 
     /*---------- Shim to treat CSS panel as Less ----------*/
     $('head style[type="text/css"]').attr('type', 'text/less');
