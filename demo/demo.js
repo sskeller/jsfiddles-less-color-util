@@ -1,7 +1,7 @@
+var s5e = window.s5e || {};
+
 (function ($, _, Modernizr, less, debug) {
   "use strict";
-
-  var s5e = {};
 
   _.extend(s5e, {
   });
