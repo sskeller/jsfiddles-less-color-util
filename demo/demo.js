@@ -1,9 +1,8 @@
+debug.time("Start Up");
 var s5e = window.s5e || {};
 
 (function ($, _, Modernizr, less, debug) {
   "use strict";
-
-  debug.time("Start Up");
 
   _.extend(s5e, {
   });
