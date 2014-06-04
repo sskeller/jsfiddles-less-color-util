@@ -1,6 +1,6 @@
 ---
-name: Base Fiddle (Simple)
-description: Base Fiddle with Modernizr, jQuery, Lodash, Less
+name: Base Fiddle (Bootstrap)
+description: Base Fiddle with Modernizr, jQuery, Lodash, Less, Twitter Bootstrap
 authors:
   - Scott Keller
 resources:
@@ -9,5 +9,7 @@ resources:
   - //cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js
   - //cdnjs.cloudflare.com/ajax/libs/less.js/1.7.0/less.min.js
   - //dl.dropboxusercontent.com/u/8596275/cdn/js/lib/ba-debug.min.js
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css
+  - //netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js
 normalize_css: no
 ...

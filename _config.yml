@@ -1,8 +1,8 @@
 # Site settings
-title: Base Fiddle (Simple)
+title: Base Fiddle (Bootstrap)
 email: scott.keller13@gmail.com
-description: "Base Fiddle with Modernizr, jQuery, Lodash, Less"
-baseurl: "/jsfiddles-base"
+description: "Base Fiddle with Modernizr, jQuery, Lodash, Less, Twitter Bootstrap"
+baseurl: "/jsfiddles-base-bootstrap"
 url: "http://sskeller.github.io"
 
 # Build settings
