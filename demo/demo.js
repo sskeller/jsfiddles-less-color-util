@@ -164,7 +164,7 @@ var s5e = window.s5e || {};
 
     function setRanges(min, max) {
         s5e.$ranges.html("(" + min + "-" + max + ")");
-    };
+    }
 
     function executeColorAmountFunction(func) {
         var iserror = s5e.$coloramountfieldset.find(".has-error").length > 0;
@@ -322,7 +322,7 @@ var s5e = window.s5e || {};
         }
         s5e.$coloroutputsection.show();
     }
-    
+
     function showValueOutput(value) {
         s5e.$sections.hide();
         s5e.$valout.html(value.toCSS());
