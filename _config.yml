@@ -1,8 +1,8 @@
 # Site settings
-title: Base Fiddle (Bootstrap)
+title: Less Color Utility
 email: scott.keller13@gmail.com
-description: "Base Fiddle with Modernizr, jQuery, Lodash, Less, Twitter Bootstrap"
-baseurl: "/jsfiddles-base-bootstrap"
+description: "This utility allows you to run the Less color functions in browser, quickly."
+baseurl: "/jsfiddles-less-color-util"
 url: "http://sskeller.github.io"
 
 # Build settings

@@ -1,6 +1,6 @@
 ---
-name: Base Fiddle (Bootstrap)
-description: Base Fiddle with Modernizr, jQuery, Lodash, Less, Twitter Bootstrap
+name: Less Color Utility
+description: This utility allows you to run the Less color functions in browser, quickly.
 authors:
   - Scott Keller
 resources:
