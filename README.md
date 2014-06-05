@@ -1,7 +1,7 @@
-jsfiddles-base-bootstrap
+jsfiddles-less-color-util
 ==============
 
-Base jsFiddle w/ Twitter Bootstrap used as a starting template.
+This utility allows you to run the Less color functions in browser, quickly.
 
-[View on jsFiddle](http://jsfiddle.net/gh/get/library/pure/sskeller/jsfiddles-base-bootstrap/tree/master/demo/)  
-[View on Github Pages](http://sskeller.github.io/jsfiddles-base-bootstrap/)
+[View on jsFiddle](http://jsfiddle.net/gh/get/library/pure/sskeller/jsfiddles-less-color-util/tree/master/demo/)  
+[View on Github Pages](http://sskeller.github.io/jsfiddles-less-color-util/)
