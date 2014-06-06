@@ -47,6 +47,11 @@ body {
 
 .btn-default {
     background-color: #999;
+    color: #1f496e;
+
+    &:hover, &:focus, &:active {
+        color: #1f496e;
+    }
 }
 
 .input-group-lg > output.form-control {
