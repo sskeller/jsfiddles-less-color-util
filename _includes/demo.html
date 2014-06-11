@@ -1,3 +1,218 @@
-<div class="container">
-  <h1>jsFiddle + GitHub + Bootstrap = <b>Super Awesome</b>!</h1>
-</div>
+<main class="container" id="main-content">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>
+                Less Color Utility
+                <small>
+                    <a id="help-link" href="#">Help</a>
+                    <a id="help-close-link" href="#">Hide Help</a>
+                </small>
+            </h3>
+
+            <p id="help">
+                I'm tired of using <a href="//lesscss.org/functions/#color-operations">Less Color Functions</a> to create related colors by having to edit my less file, save it, wait for Tomcat to auto reload it, invalidate the WRO4J cache and reload my page.  This is WAY TOO SLOW when I'm completely guessing at things like the amount to fade a color.  So I created this little utility that gives you all the Less Color Functions which you can run and get the results immediately.  The selected color function is run when any of the inputs is changed (requires tabbing off the input or pressing enter).  Enjoy!
+            </p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-sm-6">
+
+            <div class="form-group">
+                <label for="func" class="control-label">Choose a function:</label>
+                <select id="func" class="form-control input-lg">
+                </select>
+            </div>
+
+            <fieldset id="color-amount-inputs">
+
+                <div class="form-group">
+                    <label for="color1" class="control-label">Enter a color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch1" class="input-group-addon swatch"></span>
+                        <input type="text" id="color1" name="color" class="form-control color-input" value="#4679bd" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color1">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="amount" class="control-label">Enter an amount <span class="range"></span>:</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="amount" name="amount" class="form-control number-input" value="50" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="amount">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="color-color-weight-inputs">
+
+                <div class="form-group">
+                    <label for="color2" class="control-label">Enter a color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch2" class="input-group-addon swatch"></span>
+                        <input type="text" id="color2" name="color1" class="form-control color-input" value="#4679bd" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color2">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="color3" class="control-label">Enter a second color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch3" class="input-group-addon swatch"></span>
+                        <input type="text" id="color3" name="color2" class="form-control color-input" value="#ee2830" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color3">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="weight" class="control-label">Enter a weight <span class="range"></span>:</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="weight" name="weight" class="form-control number-input" value="50" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="weight">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="color-dark-light-threshold-inputs">
+
+                <div class="form-group">
+                    <label for="color4" class="control-label">Enter a color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch4" class="input-group-addon swatch"></span>
+                        <input type="text" id="color4" name="color" class="form-control color-input" value="#4679bd" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color4">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="color5" class="control-label">Enter a dark color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch5" class="input-group-addon swatch"></span>
+                        <input type="text" id="color5" name="dark" class="form-control color-input" value="#fff" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color5">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="color6" class="control-label">Enter a light color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch6" class="input-group-addon swatch"></span>
+                        <input type="text" id="color6" name="light" class="form-control color-input" value="#000" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color6">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="threshold" class="control-label">Enter a threshold <span class="range"></span>:</label>
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="threshold" name="threshold" class="form-control number-input" value="50" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="threshold">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="color-inputs">
+
+                <div class="form-group">
+                    <label for="color7" class="control-label">Enter a color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch7" class="input-group-addon swatch"></span>
+                        <input type="text" id="color7" name="color" class="form-control color-input" value="#4679bd" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color7">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <fieldset id="color-color-inputs">
+
+                <div class="form-group">
+                    <label for="color8" class="control-label">Enter a color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch8" class="input-group-addon swatch"></span>
+                        <input type="text" id="color8" name="color1" class="form-control color-input" value="#4679bd" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color8">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="color9" class="control-label">Enter a second color:</label>
+                    <div class="input-group input-group-lg">
+                        <span id="swatch9" class="input-group-addon swatch"></span>
+                        <input type="text" id="color9" name="color2" class="form-control color-input" value="#ee2830" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="color9">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </fieldset>
+
+            <hr/>
+
+            <h3>Your Results:</h3>
+
+            <section id="color-output">
+
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <span id="rgb-swatch" class="input-group-addon swatch"></span>
+                        <output id="rgb-output" class="form-control"></output>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="rgb-output">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+                <div id="extra-output" class="form-group">
+                    <div class="input-group input-group-lg">
+                        <span id="rgb-swatch2" class="input-group-addon swatch"></span>
+                        <output id="rgb-output2" class="form-control"></output>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="rgb-output2">Copy</button>
+                        </span>
+                    </div>
+                </div>
+
+            </section>
+
+            <section id="value-output">
+                <div class="form-group">
+                    <label for="val-output" class="control-label">Returned value:</label>
+                    <div class="input-group input-group-lg">
+                        <output id="val-output" class="form-control"></output>
+                        <span class="input-group-btn">
+                            <button class="btn btn-default copy-btn" type="button" data-clipboard-target="val-output">Copy</button>
+                        </span>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </div>
+</main>

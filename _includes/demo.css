@@ -1,4 +1,59 @@
 /* Less */
-h1 {
-    b { color: #c00; }
+fieldset { display: none; }
+section { display: none; }
+#extra-output { display: none; }
+#help {
+    display: none;
+    clear: both;
+}
+#help-close-link { display: none; }
+h3 {
+    small {
+        padding-left: 15px;
+    }
+}
+
+.input-group {
+    position: relative;
+}
+
+.swatch {
+    min-width: 50px;
+
+    &:hover {
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top:0;
+        left: 0;
+        z-index: 9000;
+    }
+}
+
+hr {
+    border-width: 2px;
+    border-color: #666;
+}
+
+body {
+    background: #333;
+    color: #eee;
+}
+
+.form-control {
+    background: #555;
+    color: #eee;
+}
+
+.btn-default {
+    background-color: #999;
+    color: #1f496e;
+
+    &:hover, &:focus, &:active {
+        color: #1f496e;
+    }
+}
+
+.input-group-lg > output.form-control {
+    padding: 9px 16px;
 }
