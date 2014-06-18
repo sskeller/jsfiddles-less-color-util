@@ -20,7 +20,7 @@ namespace :publishto do
       system "git merge master --no-edit"
 
       # run rake jsfiddle:copy
-      Rake::Task['copy:tojsfiddle'].execute
+      Rake::Task['copyto:jsfiddle'].execute
 
       # commit if files are changed
       git_status = `git status --short`
